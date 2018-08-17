@@ -10,7 +10,7 @@ class PigLatinizer
         consonant = letters.shift
         letters.push(consonant)
       end
-        letters.join('') + "way"
+        letters.join('') + "ay"
     end
   end
 
