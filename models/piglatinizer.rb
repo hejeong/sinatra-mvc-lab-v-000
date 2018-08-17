@@ -1,10 +1,15 @@
 class PigLatinizer
 
-  def piglatinize(word)
+  def piglatinize(sentence)
+  
+  end
+
+  def scramble(word)
     # if begins with vowel
     if word.match(/^[aeiouAEIOU].*/) != nil
       word + "way"
     else
+      #if begins with consonant
         letters = word.split('')
         until letters[0].match(/^[aeiouAEIOU].*/) != nil
           consonant = letters.shift
@@ -13,7 +18,6 @@ class PigLatinizer
         letters.join('') + "ay"
     end
   end
-
 
 
 end
