@@ -6,7 +6,9 @@ class PigLatinizer
       word + "ay"
     else
       letters = word.split('')
-      letters.
+      consonant = letters.shift
+      letters.push(consonant)
+      letters + "ay"
     end
   end
 
