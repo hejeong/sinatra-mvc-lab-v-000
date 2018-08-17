@@ -2,9 +2,10 @@ class PigLatinizer
 
   def piglatinize(sentence)
     words = sentence.split(' ')
-    words.collect do |word|
+    pig_latinized = words.collect do |word|
       scramble(word)
     end
+    pig_latinized.join(" ")
   end
 
   def scramble(word)
