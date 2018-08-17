@@ -5,12 +5,12 @@ class PigLatinizer
     if word.match(/^[aeiouAEIOU].*/) != nil
       word + "way"
     else
-      until letters[0].match(/^[aeiouAEIOU].*/) == nil
         letters = word.split('')
+      until letters[0].match(/^[aeiouAEIOU].*/) == nil
         consonant = letters.shift
         letters.push(consonant)
-        letters.join('') + "ay"
       end
+        letters.join('') + "ay"
     end
   end
 
