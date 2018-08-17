@@ -6,6 +6,7 @@ class PigLatinizer
       word + "way"
     else
       letters = word.split('')
+      while letters[0].match(/^[aeiouAEIOU].*/) == nil
       consonant = letters.shift
       letters.push(consonant)
       letters.join('') + "ay"
