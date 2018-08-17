@@ -8,7 +8,7 @@ class PigLatinizer
       letters = word.split('')
       consonant = letters.shift
       letters.push(consonant)
-      letters + "ay"
+      letters.join('') + "ay"
     end
   end
 
