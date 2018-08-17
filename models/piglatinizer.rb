@@ -5,5 +5,5 @@ class PigLatinizer
     @word = word
   end
 
-  
+
 end
