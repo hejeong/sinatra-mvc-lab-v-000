@@ -3,7 +3,7 @@ class PigLatinizer
   def piglatinize(word)
     # if begins with vowel
     if word.match(/^[aeiouAEIOU].*/) != nil
-      word + "ay"
+      word + "way"
     else
       letters = word.split('')
       consonant = letters.shift
