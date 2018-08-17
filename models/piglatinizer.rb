@@ -11,6 +11,7 @@ class PigLatinizer
     else
       #if begins with consonant
         letters = word.split('')
+        #until the beginning consonant sounds are moved to the back
         until letters[0].match(/^[aeiouAEIOU].*/) != nil
           consonant = letters.shift
           letters.push(consonant)
